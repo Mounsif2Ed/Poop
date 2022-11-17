@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,
+        user-scalable=1">
+        <title>Home quizz</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <nav>
+            <a href="Untitled-1.html">Home</a>
+            <a href="page 2.html">POOP</a>
+            <a href="page 3.html">MORE POOP</a>
+            <a href="page 4.html">quizz poop</a>
+            <div class="animation start-home"></div>
+        </nav>
+        <style>header {
+            background:#635239;
+            border-radius: 8px;
+        }
+        
+        nav {
+            margin: 27px auto 0;
+        
+            position: relative;
+            width: 590px;
+            height: 50px;
+            background-color: #635239;
+            border: 2px #ecf0f1;
+            border-style: solid;
+            border-radius: 8px;
+            font-size: 0;
+        }
+        nav a {
+            line-height: 50px;
+            height: 100%;
+            font-size: 15px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+        nav .animation {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            z-index: 0;
+            transition: all .5s ease 0s;
+            border-radius: 8px;
+        }
+        a:nth-child(1) {
+            width: 100px;
+        }
+        a:nth-child(2) {
+            width: 110px;
+        }
+        a:nth-child(3) {
+            width: 100px;
+        }
+        a:nth-child(4) {
+            width: 160px;
+        }
+        a:nth-child(5) {
+            width: 120px;
+        }
+        nav .start-home, a:nth-child(1):hover~.animation {
+            width: 100px;
+            left: 0;
+            background-color: #1abc9c;
+        }
+        nav .start-about, a:nth-child(2):hover~.animation {
+            width: 110px;
+            left: 100px;
+            background-color: #e74c3c;
+        }
+        nav .start-blog, a:nth-child(3):hover~.animation {
+            width: 100px;
+            left: 210px;
+            background-color: #3498db;
+        }
+        nav .start-portefolio, a:nth-child(4):hover~.animation {
+            width: 160px;
+            left: 310px;
+            background-color: #9b59b6;
+        }
+        nav .start-contact, a:nth-child(5):hover~.animation {
+            width: 120px;
+            left: 470px;
+            background-color: #e67e22;
+        }</style>
+
+        
+        <div class="qa_box">
+            <div class="qa_header">
+                <span>Score: <span id="score">0</span></span>
+                <span id="countdown">0</span>
+            </div>
+            <div class="qa_body">
+                <div class="qa_set active">
+                    <h4>1.Quelle est le caca le plus beau?</h4>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a1">
+                        <span> caca moux </span>
+                    </div>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a1">
+                        <span> caca dure </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a1">
+                        <span> long caca </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a1" valid="valid">
+                        <span> caca de sumo </span>
+                    </div>
+                </div>
+
+                <div class="qa_set ">
+                    <h4>2.Quelle est la couleur du caca lorsque on mange barba?</h4>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a2">
+                        <span> bleu </span>
+                    </div>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a2">
+                        <span> vert </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a2" valid="valid">
+                        <span> rose </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a2">
+                        <span> rouge </span>
+                    </div>
+                </div>
+
+                <div class="qa_set ">
+                    <h4>3.Quelle est le caca le plus long du monde</h4>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a3">
+                        <span> 1 mètre </span>
+                    </div>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a3" valid="valid">
+                        <span> 20 centimètre </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a3">
+                        <span> 30 centimètre </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a3">
+                        <span> 50 centimètre </span>
+                    </div>
+                </div>
+
+                <div class="qa_set ">
+                    <h4>4.Qui qui a fait le plus long caca?</h4>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a4">
+                        <span> Mounsif </span>
+                    </div>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a4">
+                        <span> Un sumo </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a4">
+                        <span> Donald Trump </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a4" valid="valid">
+                        <span> un viking </span>
+                    </div>
+                </div>
+
+                <div class="qa_set ">
+                    <h4>5.Combien coute ce caca?</h4>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a5">
+                        <span> 1 000 000 000$ </span>
+                    </div>
+                    <div class="qa_ans_row">
+                        <input type="radio" name="a5" valid="valid">
+                        <span> 39.000$ </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a5">
+                        <span> 53.000$ </span>
+                    </div><div class="qa_ans_row">
+                        <input type="radio" name="a5">
+                        <span> 1billion$ </span>
+                    </div>
+                </div>
+
+                <div class="qa_set">
+                    <h4>bravo vous étes des vrais caca désormais <span id="totalScore">100000000</span> sur 100</h4>
+                </div>
+
+            </div>
+            <div class="qa_footer">
+                <span class="btn1" id="skip">suivant</span>
+            </div>
+
+        </div>
+
+
+        <script src="script.js"></script>
+
+    <style>body{
+        font-family: arial;
+        font-size: 16px;
+        margin: 0;
+        background: rgb(155, 155, 155);
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 100vh;
+    }
+    
+    .qa_box{
+        width: 500px;
+        padding: 20px;
+        min-height: 100px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+        border-radius: 15px;
+    }
+    
+    .qa_header{
+        background-color: #0b58a7;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        margin: -20px -20px 20px;
+        border-radius: 15px 15px 0 0;
+        font-size: 20px;
+    }
+    
+    .qa_set{
+        display: none;
+    }
+    
+    .qa_set.active{
+        display: block;
+    }
+    
+    .qa_set, h4{
+        margin: 0 0 15px;
+        font-size: 20px;
+    }
+    .qa_ans_row{
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    .qa_ans_row input{
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .qa_ans_row span{
+        display: block;
+        padding: 8px 15px;
+        background-color: #bad0c9;
+        border-radius: 15px;
+        transition: all 0.3s ease-out;
+    }
+    
+    .qa_ans_row:hover span{
+        background-color: #9ab5ac;
+    }
+    
+    .qa_ans_row input:checked + span{
+        background-color: #f93c3c;
+    }
+    
+    .qa_ans_row input[valid]:checked + span {
+        background-color: green;
+        color: #fff;
+    }
+    
+    .qa_footer{
+        padding: 10px 0 0;
+        text-align: right;
+    }
+    
+    .btn1 {
+        display: inline-block;
+        padding: 8px 20px;
+        background-color: #0b58a7;
+        color: #fff;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    
+    .btn1:hover{
+        background-color: #064484;
+    }</style>
+    </body>
+</html>
